@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name":"百度优化插件",
+  "version":"0.1",
+  "description":"优化百度搜索结果",
+  "action":{
+      "default_popup":"popup/popup.html",
+      "js": ["popup/button_ani.js","popup/button_init.js","popup/save.js"]
+  },
+  "content_scripts": [
+      {
+        "matches": ["*://www.baidu.com/s*"],
+        "js": ["content/main.js"],
+        "run_at": "document_idle"
+      },
+      {
+        "matches": ["*://www.baidu.com/s*"],
+        "js": ["content/delete_tn.js"],
+        "run_at": "document_start"
+      },
+      {
+        "matches": ["*://www.baidu.com/s*"],
+        "js": ["content/order_left.js"],
+        "run_at": "document_end"
+      },
+      {
+        "matches": ["*://www.baidu.com/s*"],
+        "js": ["content/group_right.js"],
+        "run_at": "document_end"
+      }
+  ],
+  "permissions":[
+    "storage"
+  ]
+}

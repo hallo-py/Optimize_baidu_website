@@ -1,0 +1,111 @@
+<!doctype html>
+<!--
+
+参考：开关 ：https://blog.csdn.net/weixin_52707625/article/details/125313755
+
+-->
+
+<html>
+<head>
+    <meta charset=utf-8>
+    <script src="button_init.js" type="text/javascript"></script>
+    <script src="button_ani.js" type="text/javascript"></script>
+    <script src="save.js" type="text/javascript"></script>
+    <style>
+        /* 开关样式 */
+        .btn_on_off{
+            width: 60px;
+            height: 25px;
+            margin: 0 3px;
+            border-radius: 25px;
+            font-size: 14px;
+            cursor: pointer;
+            position: relative;
+            border: 1px solid white;
+            background-color: #12B090;
+        }
+        .btn-on-circle{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            top: 5px;
+            left: 5px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: 0 0 10px white;
+            transition: all .5s;
+        }
+        .btn-on-text{
+            position: absolute;
+            right: 10px;
+            line-height: 25px;
+            color: white;
+            transition: all .5s;
+        }
+        /* 开关与文字同一行 */
+        label div.btn_on_off{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        label p{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body style="background-color: #F8F9FA;width: 200px;">
+    <form style="display: grid; place-items: center;">
+        <h3>右侧定义:</h3>
+        <!-- 百度AI模块显示开关 -->
+        <label>
+            <p>显示百度AI模块:</p>
+            <div class="btn_on_off show_baidu_ai">
+                <span class="btn-on-circle"></span>
+                <span class="btn-on-text">ON</span>
+            </div>
+        </label>
+        <!-- 是否显示 metaso -->
+        <!-- <label>
+            <p>是否显示 秘塔AI搜索:</p>
+            <div class="btn_on_off show_meta_ai">
+                <span class="btn-on-circle"></span>
+                <span class="btn-on-text">ON</span>
+            </div>
+        </label> -->
+
+        <h3>左侧定义:</h3>
+        <label>
+            <p>官网提前:</p>
+            <div class="btn_on_off guanwang_first">
+                <span class="btn-on-circle"></span>
+                <span class="btn-on-text">ON</span>
+            </div>
+        </label>
+        <label>
+            <p>显示下载器:</p>
+            <div class="btn_on_off show_downloder">
+                <span class="btn-on-circle"></span>
+                <span class="btn-on-text">ON</span>
+            </div>
+        </label>
+        <label>
+            <p>显示视频:</p>
+            <div class="btn_on_off show_video">
+                <span class="btn-on-circle"></span>
+                <span class="btn-on-text">ON</span>
+            </div>
+        </label>
+        <label>
+            <p>显示精选笔记:</p>
+            <div class="btn_on_off show_notee">
+                <span class="btn-on-circle"></span>
+                <span class="btn-on-text">ON</span>
+            </div>
+        </label>
+
+        <input type="button" id="saveBtn" value="保存" />
+    </form>
+
+    <div class="log"><p>日志:</p></div>
+</body>
+</html>

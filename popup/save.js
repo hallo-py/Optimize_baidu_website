@@ -1,0 +1,26 @@
+'use strict';
+
+// 等待 DOM 加载完成后绑定保存按钮事件
+document.addEventListener('DOMContentLoaded', function() {
+    const saveBtn = document.getElementById('saveBtn');
+    if (saveBtn) {
+        saveBtn.addEventListener('click', save);
+    }
+});
+
+function save() {
+    // 获取所有开关按钮
+    document.querySelectorAll('.btn_on_off').forEach(btn => {
+        const isOn = getButtonState(btn);  // getButtonState 定义在 button_ani.js 中
+        const name = btn.classList[1];      // 例如 'show_baidu_ai'
+        
+        chrome.storage.sync.set({
+                [name] : isOn 
+            }, () => {
+                // console.log(`保存 ${name}: ${isOn}`);
+                document.querySelector("div.log")
+                    .insertAdjacentHTML("afterEnd",`<p>save: ${name}:${isOn}</p>`);
+            }
+        );
+    });
+}
