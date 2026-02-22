@@ -18,8 +18,12 @@ function save() {
                 [name] : isOn 
             }, () => {
                 // console.log(`保存 ${name}: ${isOn}`);
-                document.querySelector("div.log")
-                    .insertAdjacentHTML("afterEnd",`<p>save: ${name}:${isOn}</p>`);
+                chrome.storage.sync.get(["show_log"], (result) => {
+                    if (result.show_log) {
+                        document.querySelector("div.log")
+                            .insertAdjacentHTML("afterEnd",`<p>save: ${name}:${isOn}</p>`);
+                    }
+                });
             }
         );
     });

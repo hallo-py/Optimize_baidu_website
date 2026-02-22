@@ -1,7 +1,5 @@
 'use strict';
 
-console.log("in main.js");
-
 var right_html = `
     <div class="output">
     </div>
@@ -86,6 +84,16 @@ function delete_annoy() {
     // document.querySelector("div.tts-video-continue")?.remove();
 }
 
+
+// 监听 是否启用组件
+chrome.storage.sync.get(["on_off_opt"], (result) => {
+
+    console.log(result.on_off_opt??true);  // true -> default_var["on_off_opt"]
+    if (! (result.on_off_opt??true) ) {
+        return;
+    }
+
+
 // ================== 初始化 ==================
 console.log('开始篡改...');
 
@@ -107,3 +115,7 @@ observer.observe(document.body, { childList: true, subtree: true });
 finished = true;
 document.dispatchEvent(new CustomEvent('finished'));
 console.log('篡改完毕...');
+
+
+
+});

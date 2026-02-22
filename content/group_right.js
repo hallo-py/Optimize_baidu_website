@@ -1,7 +1,5 @@
 'use strict';
 
-console.log("in group_right.js");
-
 // ================== 移动 AI 模块到右侧栏（移动后折叠）==================
 function moveAIToRight() {
     // 选择需要移动的模块（wenda_generate 和 new_baikan_index）

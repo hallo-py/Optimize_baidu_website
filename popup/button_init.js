@@ -1,6 +1,8 @@
 'use strict';
 
 var defualt_var = {
+    "on_off_opt": true,
+    "show_log": false,
     "show_baidu_ai": true,
     "guanwang_first": true,
     "show_downloder": false,
@@ -34,7 +36,13 @@ function initToggleButtons() {
             btn.dataset.state = isOn ? 'on' : 'off';
             updateButtonUI(btn, isOn);
             //调试输出
-            document.querySelector("div.log").insertAdjacentHTML("beforeEnd", `<p>load: ${name}:${savedValue}</p>`);
+            chrome.storage.sync.get(["show_log"], (result) => {
+                if (result.show_log) {
+                    document.querySelector("div.log").insertAdjacentHTML("beforeEnd", `<p>load: ${name}:${savedValue}</p>`);
+                } else {
+                    document.querySelector("div.log")?.remove();
+                }
+            });
         });
 
         // 绑定点击事件（仅切换 UI 状态，保存由保存按钮负责）
