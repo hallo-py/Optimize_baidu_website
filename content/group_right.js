@@ -1,5 +1,23 @@
 'use strict';
 
+var right_html = `
+    <div class="output">
+    </div>
+    <div class="baidu_ai">
+        <!-- 百度 AI 模块 -->
+        <!-- 填 -->
+        <hr/>
+    </div>
+    <div class="extract">
+        <!-- 提取摘要模块 -->
+        <h3>从搜索结果中提取信息:</h3>
+        <p>官网:<span class="extract_guanwang">未找到</span></p>    <!-- 填 -->
+        <p>翻译:<span class="extract_translate">未找到</span></p>   <!-- 填 -->
+        <p>百度百科:<span class="extract_baike">未找到</span></p>   <!-- 填 <a href=javascript:void(0);/> 或 <a/>直接跳转-->
+        <hr/>
+    </div>
+`;
+
 // ================== 移动 AI 模块到右侧栏（移动后折叠）==================
 function moveAIToRight() {
     // 选择需要移动的模块（wenda_generate 和 new_baikan_index）
@@ -170,7 +188,8 @@ const left_col = document.querySelector('#content_left');
 const params = new URLSearchParams(window.location.search);
 // if (!right_col || !left_col) return;
 
-
+if (!right_col) return;
+right_col.innerHTML = right_html;
 moveAIToRight();
 
 // 官网处理
@@ -215,6 +234,7 @@ if (baike) {
 }
 
 
+right_col.dataset.finished = 'true';
 
 // end code here ------------------
 
