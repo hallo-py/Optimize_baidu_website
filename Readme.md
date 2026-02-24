@@ -14,6 +14,13 @@ v0.0.1
 
 1. storage: 用于存储用户设置，用于个性化。
 
+# 制作清单
+（最新版2版以前的 todo list 会被删除）
+
+- 优化布局
+- 优化popup设计
+- <i> ~~修改某些时候插件没响应的问题~~ </i>
+
 # 协议
 
 本项目采用 CC BY-NC-SA 4.0 许可证，详情请参阅 LICENSE 文件。
@@ -25,4 +32,5 @@ v0.0.1
 
 # 鸣谢
 
-- popup的开关设计: @weixin_52707625: https://blog.csdn.net/weixin_52707625/article/details/125313755
+- 布局建议: [@青璃 (微博)](https://weibo.com/u/7757166727)
+- popup的开关设计: @weixin_52707625: [原帖](https://blog.csdn.net/weixin_52707625/article/details/125313755)
