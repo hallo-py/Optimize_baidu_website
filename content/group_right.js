@@ -16,6 +16,18 @@ var right_html = `
         <p>百度百科:<span class="extract_baike">未找到</span></p>   <!-- 填 <a href=javascript:void(0);/> 或 <a/>直接跳转-->
         <hr/>
     </div>
+    <div class="core_ai">
+        <!-- 内置 AI 模块 -->
+        <h3>问 百度AI助手:</h3>
+        <div class="inp_bar">
+            <select id="ai_model" name="ai_model">
+                <option value="llm">普通问答</option>
+                <option value="t2i">生成图片</option>
+            </select>
+            <input type="text" placeholder="跳转问题“__”或输入问题和生成图片"> <!-- 填 '__' -->
+            <button href="javascript:void(0);">发送</button>
+        </div>
+    </div>
 `;
 
 // ================== 移动 AI 模块到右侧栏（移动后折叠）==================
@@ -233,6 +245,23 @@ if (baike) {
     }
 }
 
+// 问 百度 AI 助手
+const ai_ask = right_col.querySelector('.core_ai');
+ai_ask.querySelector("input").placeholder = `跳转问题“${decodeURIComponent(params.get('wd'))}”或输入问题和生成图片`;
+ai_ask.querySelector("button").addEventListener("click", () => {
+    let model = ai_ask.querySelector("#ai_model").value;
+    let prompt = ai_ask.querySelector("input").value;
+
+    if (!prompt) prompt = decodeURIComponent(params.get('wd'));
+    
+    if (model === 'llm') {
+        // 普通问答
+        window.open(`https://chat.baidu.com/search?word=${prompt}&extParams=%7B%22aPageWord%22%3A%22${params.get('wd')}%22%2C%22enter_type%22%3A%22a_62112%22%2C%22sa%22%3A%22a_62112_doudi%22%7D`, '_blank');
+    } else if (model === 't2i') {
+        // 生成图片
+        window.open(`https://chat.baidu.com/search?enter_type=a_4&extParams=%7B%22openInputMode%22%3A%228%22%2C%22inputPanelExt%22%3A%7B%22showPrompt%22%3Afalse%2C%22showPanel%22%3Afalse%7D%7D&word=${prompt}&sa=re_dl_4`, '_blank');
+    }
+});
 
 right_col.dataset.finished = 'true';
 

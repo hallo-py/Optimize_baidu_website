@@ -107,3 +107,12 @@ const observer = new MutationObserver(() => {
 observer.observe(document.body, { childList: true, subtree: true });
 
 });
+
+/*
+TODO:
+优化界面：添加 李逵的玻璃（流体玻璃）
+添加百度AI入口 （免费！！又可以加分！！！！）
+- 图片: https://chat.baidu.com/search?enter_type=a_4&extParams=%7B%22openInputMode%22%3A%228%22%2C%22inputPanelExt%22%3A%7B%22showPrompt%22%3Afalse%2C%22showPanel%22%3Afalse%7D%7D&word= [qustion] &sa=re_dl_4
+- LLM: https://chat.baidu.com/search?word= [question] &extParams=%7B%22aPageWord%22%3A%22%E8%9D%B4%E8%9D%B6%22%2C%22enter_type%22%3A%22a_62112%22%2C%22sa%22%3A%22a_62112_doudi%22%7D
+
+*/
