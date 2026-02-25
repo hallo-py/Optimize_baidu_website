@@ -28,3 +28,25 @@ function save() {
         );
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const clearBtn = document.getElementById('clearBtn');
+    if (clearBtn) {
+        clearBtn.addEventListener('click', clear);
+    }
+});
+
+function clear() {
+    chrome.storage.sync.clear(() => {
+        // console.log(`清空所有数据`);
+        chrome.storage.sync.get(["show_log"], (result) => {
+            if (result.show_log) {
+                document.querySelector("div.log")
+                    .insertAdjacentHTML("afterEnd",`<p>clear: 所有数据已清空</p>`);
+            }
+        });
+    });
+    chrome.storage.sync.set(defualt_var).then(() => {
+        window.location.reload();
+    });
+}

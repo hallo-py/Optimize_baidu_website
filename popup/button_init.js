@@ -1,15 +1,5 @@
 'use strict';
 
-var defualt_var = {
-    "on_off_opt": true,
-    "show_log": false,
-    "show_baidu_ai": true,
-    "guanwang_first": true,
-    "show_downloder": false,
-    "show_video": false,
-    "show_notee": false,
-}
-
 // 等待 DOM 加载完成后初始化所有开关按钮
 document.addEventListener('DOMContentLoaded', function() {
     initToggleButtons();
@@ -19,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
  * 初始化所有类名为 'btn_on_off' 的按钮
  * 每个按钮独立维护状态，点击时切换 ON/OFF
  */
-function initToggleButtons() {
+var initToggleButtons=function() {
     const buttons = document.querySelectorAll('.btn_on_off');
     buttons.forEach(btn => {
         const name = btn.classList[1];
@@ -31,18 +21,19 @@ function initToggleButtons() {
         // 读取存储值
         chrome.storage.sync.get([name], (result) => {
             const savedValue = result[name];
-            const isOn = (savedValue??defualt_var[name]);
+            // const isOn = (savedValue??defualt_var[name]);
+            const isOn = savedValue;
             // isOn: (isOn 为 undefined [取 defualt] ) ? true->on : false:off
             btn.dataset.state = isOn ? 'on' : 'off';
             updateButtonUI(btn, isOn);
             //调试输出
-            chrome.storage.sync.get(["show_log"], (result) => {
-                if (result.show_log) {
+            // chrome.storage.sync.get(["show_log"], (result) => {
+            //     if (result.show_log) {
                     document.querySelector("div.log").insertAdjacentHTML("beforeEnd", `<p>load: ${name}:${savedValue}</p>`);
-                } else {
-                    document.querySelector("div.log")?.remove();
-                }
-            });
+            //     } else {
+            //         document.querySelector("div.log")?.remove();
+            //     }
+            // });
         });
 
         // 绑定点击事件（仅切换 UI 状态，保存由保存按钮负责）

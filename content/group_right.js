@@ -24,7 +24,7 @@ var right_html = `
                 <option value="llm">普通问答</option>
                 <option value="t2i">生成图片</option>
             </select>
-            <input type="text" placeholder="跳转问题“__”或输入问题和生成图片"> <!-- 填 '__' -->
+            <input type="text" placeholder="输入问题或生成图片"> <!-- 填 '__' -->
             <button href="javascript:void(0);">发送</button>
         </div>
     </div>
@@ -247,7 +247,7 @@ if (baike) {
 
 // 问 百度 AI 助手
 const ai_ask = right_col.querySelector('.core_ai');
-ai_ask.querySelector("input").placeholder = `跳转问题“${decodeURIComponent(params.get('wd'))}”或输入问题和生成图片`;
+ai_ask.querySelector("input").placeholder = `输入问题或生成图片`;
 ai_ask.querySelector("button").addEventListener("click", () => {
     let model = ai_ask.querySelector("#ai_model").value;
     let prompt = ai_ask.querySelector("input").value;
