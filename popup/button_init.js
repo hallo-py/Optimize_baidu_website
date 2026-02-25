@@ -21,9 +21,9 @@ var initToggleButtons=function() {
         // 读取存储值
         chrome.storage.sync.get([name], (result) => {
             const savedValue = result[name];
-            // const isOn = (savedValue??defualt_var[name]);
+            // const isOn = (savedValue??default_var[name]);
             const isOn = savedValue;
-            // isOn: (isOn 为 undefined [取 defualt] ) ? true->on : false:off
+            // isOn: (isOn 为 undefined [取 default] ) ? true->on : false:off
             btn.dataset.state = isOn ? 'on' : 'off';
             updateButtonUI(btn, isOn);
             //调试输出

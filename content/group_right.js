@@ -43,7 +43,7 @@ function moveAIToRight() {
         baidu_ai_area.remove();
     }
     chrome.storage.sync.get(["show_baidu_ai"], (result) => {
-        if (! (result?.show_baidu_ai)??defualt_var["show_baidu_ai"]) {
+        if (! (result?.show_baidu_ai)??default_var["show_baidu_ai"]) {
             aiDiv?.remove();
             baidu_ai_area.remove();
             return;

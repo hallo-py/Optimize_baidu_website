@@ -1,7 +1,7 @@
-var defualt_var = {
+var default_var = {
     "is_not_first": true,
     "on_off_opt": true,
-    "show_log": true,
+    "show_log": false,
     "show_baidu_ai": true,
     "guanwang_first": true,
     "show_downloder": false,

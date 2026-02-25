@@ -46,7 +46,7 @@ function clear() {
             }
         });
     });
-    chrome.storage.sync.set(defualt_var).then(() => {
+    chrome.storage.sync.set(default_var).then(() => {
         window.location.reload();
     });
 }

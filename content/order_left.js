@@ -23,7 +23,7 @@ if (guanwang) {
 const downloder = left?.querySelector(".pc-down_1c6jp")?.closest(".c-container");
 if (downloder) {
     chrome.storage.sync.get(["show_downloder"], (result) => {
-        if (!result.show_downloder??defualt_var["show_downloder"]) {
+        if (!result.show_downloder??default_var["show_downloder"]) {
             downloder.remove();
         }
     });
@@ -34,7 +34,7 @@ if (downloder) {
 const video = left?.querySelector(".more_1iY_B")?.closest(".c-container");
 if (video) {
     chrome.storage.sync.get(["show_video"], (result) => {
-        if (!result.show_video??defualt_var["show_video"]) {
+        if (!result.show_video??default_var["show_video"]) {
             video.remove();
         }
     });
@@ -43,7 +43,7 @@ if (video) {
 const notee = left?.querySelector(".pc-footer_44G1E")?.closest(".c-container");
 if (notee) {
     chrome.storage.sync.get(["show_notee"], (result) => {
-        if (!result.show_notee??defualt_var["show_notee"]) {
+        if (!result.show_notee??default_var["show_notee"]) {
             notee.remove();
         }
     });

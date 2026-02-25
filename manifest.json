@@ -9,22 +9,22 @@
   "content_scripts": [
     {
       "matches": ["*://www.baidu.com/s*"],
-      "js": ["content/main.js", "defualt_var.js"],
+      "js": ["content/main.js", "default_var.js"],
       "run_at": "document_idle"
     },
     {
       "matches": ["*://www.baidu.com/s*"],
-      "js": ["content/delete_tn.js", "defualt_var.js"],
+      "js": ["content/delete_tn.js", "default_var.js"],
       "run_at": "document_start"
     },
     {
       "matches": ["*://www.baidu.com/s*"],
-      "js": ["content/order_left.js", "defualt_var.js"],
+      "js": ["content/order_left.js", "default_var.js"],
       "run_at": "document_end"
     },
     {
       "matches": ["*://www.baidu.com/s*"],
-      "js": ["content/group_right.js", "defualt_var.js"],
+      "js": ["content/group_right.js", "default_var.js"],
       "run_at": "document_end"
     }
   ],
