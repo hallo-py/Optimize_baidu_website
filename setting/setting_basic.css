@@ -1,9 +1,14 @@
-h1 {text-align:center;
+h1{
+    text-align:center;
 }
 
-a {text-decoration: none;}
+a{
+    text-decoration: none;
+}
 
-.item{border: 2px,solid,black}
+.item{
+    border: 2px,solid,black
+}
 
 /* 开关样式 */
 .btn_on_off{

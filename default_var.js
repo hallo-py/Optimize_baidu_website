@@ -1,4 +1,5 @@
 var default_var = {
+    "now_icon": true,
     "is_not_first": true,
     "on_off_opt": true,
     "show_log": false,

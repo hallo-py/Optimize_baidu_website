@@ -68,7 +68,7 @@ var initToggleButtons=function() {
             //调试输出
             // chrome.storage.sync.get(["show_log"], (result) => {
             //     if (result.show_log) {
-                    document.querySelector("div.log").insertAdjacentHTML("beforeEnd", `<p>load: ${name}:${savedValue}</p>`);
+                    // document.querySelector("div.log").insertAdjacentHTML("beforeEnd", `<p>load: ${name}:${savedValue}</p>`);
             //     } else {
             //         document.querySelector("div.log")?.remove();
             //     }
@@ -89,3 +89,53 @@ var initToggleButtons=function() {
 document.addEventListener('DOMContentLoaded', function() {
     initToggleButtons();
 });
+
+// 保存 ===============================================================
+
+// 等待 DOM 加载完成后绑定保存按钮事件
+document.addEventListener('DOMContentLoaded', function() {
+    const saveBtn = document.getElementById('saveBtn');
+    if (saveBtn) {
+        saveBtn.addEventListener('click', save);
+    }
+});
+
+function save() {
+    // 获取所有开关按钮
+    document.querySelectorAll('.btn_on_off').forEach(btn => {
+        const isOn = getButtonState(btn);  // getButtonState 定义在 button_ani.js 中
+        const name = btn.classList[1];      // 例如 'show_baidu_ai'
+        
+        chrome.storage.sync.set({
+                [name] : isOn 
+            }, () => {
+                console.log(`保存 ${name}: ${isOn}`);
+            }
+        );
+    });
+}
+
+/*
+document.addEventListener('DOMContentLoaded', function() {
+    const clearBtn = document.getElementById('clearBtn');
+    if (clearBtn) {
+        clearBtn.addEventListener('click', clear);
+    }
+});
+
+function clear() {
+    chrome.storage.sync.clear(() => {
+        // console.log(`清空所有数据`);
+        chrome.storage.sync.get(["show_log"], (result) => {
+            if (result.show_log) {
+                document.querySelector("div.log")
+                    .insertAdjacentHTML("afterEnd",`<p>clear: 所有数据已清空</p>`);
+            }
+        });
+    });
+    chrome.storage.sync.set(default_var).then(() => {
+        window.location.reload();
+    });
+}
+*/
+

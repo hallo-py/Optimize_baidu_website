@@ -27,6 +27,13 @@ function save() {
             }
         );
     });
+
+    // 单独查看 插件状态
+    const on_off_opt=document.querySelector(".on_off_opt");
+    chrome.runtime.sendMessage({
+        title: "changeStatus",
+        message: getButtonState(on_off_opt)
+    });
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -49,4 +56,16 @@ function clear() {
     chrome.storage.sync.set(default_var).then(() => {
         window.location.reload();
     });
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const jumpBtn = document.getElementById('jump');
+    if (jumpBtn) {
+        jumpBtn.addEventListener('click', jump);
+    }
+});
+
+function jump() {
+    chrome.runtime.openOptionsPage();
 }
