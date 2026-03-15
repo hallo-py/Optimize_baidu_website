@@ -71,7 +71,7 @@ label p{
   text-align: center;
 }
 
-/* 顶部标题颜色 */
+/* 导航栏 */
 .sider {
   overflow: hidden;
   background-color: #f3f3f3;
@@ -83,6 +83,7 @@ label p{
   display: block;
   color: #ffffff;
   text-align: center;
+  text-decoration: black;
   padding: 14px 16px;
   text-decoration:none;
 }
