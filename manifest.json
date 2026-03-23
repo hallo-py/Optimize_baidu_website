@@ -23,6 +23,7 @@
   "content_scripts": [
     {
       "matches": ["*://www.baidu.com/s*"],
+      "css":["content/content_css.css"],
       "js": ["content/main.js", "default_var.js"],
       "run_at": "document_idle"
     },

@@ -11,7 +11,36 @@
             return;
         }
 
-        // ----- 工具函数：根据数据创建列表项 (使用 select_item 属性存储标识) -----
+        // --- 新增：定义拖拽完成后的处理逻辑 ---
+        function onDragEnd(evt) {
+            console.log("拖拽完成，即将触发 AfterDrag 事件:", evt);
+
+            // 创建一个自定义事件 "AfterDrag"
+            // CustomEvent 构造函数允许你传递一个 detail 对象，用于携带自定义数据
+            const customEvent = new CustomEvent("AfterDrag", {
+                detail: {
+                    // 将 SortableJS 事件对象中的关键信息传递出去
+                    draggedElement: evt.item,
+                    fromContainerId: evt.from.id,
+                    toContainerId: evt.to.id,
+                    oldIndex: evt.oldIndex,
+                    newIndex: evt.newIndex,
+                    // 可选：也可以直接传递整个 evt 对象，但通常传递具体需要的数据更好
+                    // sortableEvent: evt 
+                },
+                bubbles: true, // 事件是否向上冒泡
+                cancelable: true // 事件是否可以被取消
+            });
+
+            // 在 document 上触发这个自定义事件
+            // 你可以在其他地方监听这个事件
+            document.dispatchEvent(customEvent);
+
+            console.log("AfterDrag 自定义事件已触发。");
+        }
+
+
+        // ----- 工具函数 ：根据数据创建列表项 (使用 select_item 属性存储标识) -----
         function createItemElement(id, text) {
             const li = document.createElement('li');
             li.className = 'select_item'; // 改为 select_item，匹配内部样式
@@ -63,7 +92,9 @@
             animation: 200,
             sort: true,
             ghostClass: 'sortable-ghost',
-            dragClass: 'sortable-drag'
+            dragClass: 'sortable-drag',
+            // 添加拖拽结束事件监听器
+            onEnd: onDragEnd
         });
 
         new Sortable(deleteListEl, {
@@ -71,14 +102,16 @@
             animation: 200,
             sort: true,
             ghostClass: 'sortable-ghost',
-            dragClass: 'sortable-drag'
+            dragClass: 'sortable-drag',
+            // 添加拖拽结束事件监听器
+            onEnd: onDragEnd
         });
 
         // ----- 提供一个默认的初始数据，使页面打开时就有示例 -----
         const defaultData = {
             show: [
-                {"item":"show_baidu_ai","content":"百度AI模块"},
-                {"item":"extract","content":"提取模块"},
+                { "item": "show_baidu_ai", "content": "百度AI模块" },
+                { "item": "extract", "content": "提取模块" },
             ],
             delete: []
         };
@@ -123,7 +156,6 @@
 /*
 updateBoards: 更新内容
 @param {Object} data - { show: [ {item, content}, ... ], delete: [ {item, content}, ... ] }
-
 getSortingInfo: 获取排序信息
 @return {Object} - { show: [ {id, content}, ... ], delete: [ {id, content}, ... ] }
 */
