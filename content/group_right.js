@@ -4,31 +4,33 @@
 // 此函数整合了原先的 moveAIToRight 及其所有辅助函数 (foldAIModule, foldWendaGenerate, foldNewBaikanIndex, createCustomFoldButton, updateFoldButtonText)
 // ================== 移动 AI 模块到右侧栏（移动后折叠） ==================
 
+/**
+ * 将页面左侧的 AI 模块（如“新文心一言”、“智能回答”等）移动到指定的右侧栏容器中。
+ * 移动后，会根据用户的设置决定是否显示该模块，并为模块添加折叠功能。
+ *
+ * @param {HTMLElement} right_col - 右侧栏的 DOM 元素。
+ * @param {HTMLElement} left_col - 左侧栏的 DOM 元素（主要供其他函数使用，此函数内未直接使用）。
+ * @param {URLSearchParams} params - URL 查询参数对象。
+ */
 async function moveAIToRight(right_col, left_col, params) {
-    // 添加右侧栏 div
-    const innerhtml = `
-    <div class="baidu_ai">
-        <!-- 百度 AI 模块 -->
-        <!-- 填 -->
-        <hr/>
-    </div>
-    `;
-    right_col.insertAdjacentHTML('beforeend', innerhtml);
+    // 1. 在右侧栏创建一个容器来放置 AI 模块
+    const right_html = `<div class="baidu_ai"> <!-- 百度 AI 模块 --> <!-- 填 --> <hr/> </div>`;
+    right_col.insertAdjacentHTML('beforeend', right_html);
 
-
-    // 内部辅助函数：创建自定义折叠按钮
+    // ========== 内部辅助函数定义 ==========
+    // 创建一个自定义的折叠按钮
     function createCustomFoldButton(text) {
         const btn = document.createElement('span');
         btn.textContent = text;
         btn.style.cursor = 'pointer';
-        btn.style.color = '#4e6ef2';
+        btn.style.color = '#4e6ef2'; // 使用原始颜色
         btn.style.marginLeft = '10px';
         btn.style.fontSize = '14px';
         btn.style.userSelect = 'none';
         return btn;
     }
 
-    // 内部辅助函数：更新原生折叠按钮的文字和图标
+    // 更新 wenda_generate 类型原生折叠按钮的文字和图标
     function updateFoldButtonText(btn, isHidden) {
         const textSpan = btn.querySelector('.cos-fold-switch-text');
         const icon = btn.querySelector('.cos-icon');
@@ -36,19 +38,31 @@ async function moveAIToRight(right_col, left_col, params) {
         if (icon) icon.className = isHidden ? 'cos-icon cos-icon-down' : 'cos-icon cos-icon-up';
     }
 
-    // 折叠 wenda_generate 模块
+    // 折叠 wenda_generate 类型的模块
     function foldWendaGenerate(aiDiv) {
         const header = aiDiv.querySelector('.header_620nA');
         const content = aiDiv.querySelector('.content-container_6NKPM');
         const funcArea = aiDiv.querySelector('.cosd-search-header-functional-area');
+        // 注意：根据 AI情况2.txt，互动区域可能是 .interaction_1QalB
+        // 但根据 AI情况2.txt 的实际HTML结构，互动区域似乎是在折叠按钮下方，可能不在初始可见区域内，或者其选择器不同。
+        // 为了兼容，我们仍然尝试查找并隐藏它。
         const interaction = aiDiv.querySelector('.interaction_1QalB');
-        if (!header || !content || !funcArea) return;
+        if (!header || !content || !funcArea) {
+            console.warn('WendaGenerate module missing required elements for folding.');
+            return;
+        }
 
-        if (interaction) interaction.style.display = 'none';
+        // 隐藏互动区域 (如果存在)
+        if (interaction) {
+            interaction.style.display = 'none';
+        }
 
+        // 尝试查找并复用原有的折叠按钮
         let foldBtn = aiDiv.querySelector('.wenda-general-fold-switch_7six0 .cosd-fold-switch');
         if (foldBtn) {
+            // 确保按钮在功能区内部
             funcArea.appendChild(foldBtn);
+            // 为了防止事件监听器丢失，克隆并替换按钮
             const newBtn = foldBtn.cloneNode(true);
             foldBtn.parentNode.replaceChild(newBtn, foldBtn);
             foldBtn = newBtn;
@@ -56,106 +70,143 @@ async function moveAIToRight(right_col, left_col, params) {
             foldBtn.style.display = 'inline-flex';
             foldBtn.style.alignItems = 'center';
         } else {
+            // 如果没有原生按钮，则创建一个自定义按钮
             foldBtn = createCustomFoldButton('展开');
             funcArea.appendChild(foldBtn);
         }
 
+        // 初始状态设为隐藏
         content.style.display = 'none';
         updateFoldButtonText(foldBtn, true);
 
+        // 为折叠按钮添加点击事件
         foldBtn.addEventListener('click', (e) => {
             e.stopPropagation();
             const isHidden = content.style.display === 'none';
             content.style.display = isHidden ? '' : 'none';
+            // 如果存在互动区域，也同步其显示/隐藏状态
+            if (interaction) {
+                 interaction.style.display = isHidden ? '' : 'none';
+            }
             updateFoldButtonText(foldBtn, !isHidden);
         });
     }
 
-    // 折叠 new_baikan_index 模块
+    // 折叠 new_baikan_index 类型的模块
     function foldNewBaikanIndex(aiDiv) {
         const header = aiDiv.querySelector('.cosd-search-header');
         const content = aiDiv.querySelector('.content-container_64QCb');
+        // 注意：根据 AI情况1.txt，互动区域是 .interact-container_440HL
         const interaction = aiDiv.querySelector('.interact-container_440HL');
-        if (!header || !content) return;
+        if (!header || !content) {
+             console.warn('NewBaikanIndex module missing required elements for folding.');
+            return;
+        }
 
+        // 初始状态设为隐藏
         content.style.display = 'none';
-        if (interaction) interaction.style.display = 'none';
+        if (interaction) {
+             interaction.style.display = 'none';
+        }
 
+        // 创建并添加自定义折叠按钮
         const foldBtn = createCustomFoldButton('展开');
         const funcArea = header.querySelector('.cosd-search-header-functional-area');
-        if (funcArea) funcArea.appendChild(foldBtn);
-        else header.appendChild(foldBtn);
+        if (funcArea) {
+            funcArea.appendChild(foldBtn);
+        } else {
+            // 如果功能区不存在，则直接加到头部
+            header.appendChild(foldBtn);
+        }
 
+        // 为折叠按钮添加点击事件
         foldBtn.addEventListener('click', (e) => {
             e.stopPropagation();
             const isHidden = content.style.display === 'none';
             content.style.display = isHidden ? '' : 'none';
-            if (interaction) interaction.style.display = isHidden ? '' : 'none';
+            if (interaction) {
+                 interaction.style.display = isHidden ? '' : 'none';
+            }
             foldBtn.textContent = isHidden ? '折叠' : '展开';
         });
 
-        // 删除AI中的广告
+        // 删除AI模块中的广告（保留原有逻辑）
         document.querySelectorAll('div.cos-space-mt-lg[disable-jump="true"][rl-type="stop"][data-show-ext="{}"]')
             .forEach(ad => ad.remove());
     }
 
-    // 异步折叠入口
-    async function foldAIModule(aiDiv) {
-        if (!aiDiv) return;
-        // 读取开关状态，决定是否保留或删除
-        const result = await chrome.storage.sync.get(['show_baidu_ai']);
-        const showAI = result.show_baidu_ai !== false;
-        if (!showAI) {
-            aiDiv.remove();
-            return;
-        }
-        // 防止重复折叠
-        if (aiDiv.dataset.foldProcessed) return;
-        aiDiv.dataset.foldProcessed = 'true';
-
-        const tpl = aiDiv.getAttribute('tpl');
-        if (tpl === 'wenda_generate') foldWendaGenerate(aiDiv);
-        else if (tpl === 'new_baikan_index') foldNewBaikanIndex(aiDiv);
-    }
-
     // ========== 主逻辑 ==========
-    // 1. 读取开关状态
+    // 1. 读取用户设置
     const result = await chrome.storage.sync.get(['show_baidu_ai']);
-    const showAI = result.show_baidu_ai !== false;  // 默认 true
+    const showAI = result.show_baidu_ai !== false; // 默认 true
 
-    // 2. 查找元素
+    // 2. 查找页面上的 AI 模块和右侧栏的容器
     const aiDiv = document.querySelector('div[tpl="wenda_generate"], div[tpl="new_baikan_index"]');
     const baidu_ai_area = document.querySelector('.baidu_ai');
 
-    // 3. 根据开关决定行为
+    // 3. 根据用户设置决定行为
     if (!showAI) {
-        // 开关关闭：删除所有相关模块
+        // 如果设置为不显示，删除页面上存在的模块和右侧栏的空容器
         if (aiDiv) aiDiv.remove();
         if (baidu_ai_area) baidu_ai_area.remove();
-        return;
+        return; // 结束函数
     }
 
-    // 开关打开：检查元素是否存在
+    // 4. 检查必要元素是否存在
     if (!aiDiv) {
-        // 没有 AI 模块，删除空容器（可选）
+        // 页面上没有 AI 模块，无需操作，也可以选择删除空的右侧栏容器
         if (baidu_ai_area) baidu_ai_area.remove();
         return;
     }
     if (!baidu_ai_area) {
-        // 右侧栏容器不存在，无法移动
-        console.warn('缺少 .baidu_ai 容器');
+        // 右侧栏容器不存在，无法移动，给出警告
+        console.warn('缺少 .baidu_ai 容器，无法移动 AI 模块');
         return;
     }
-    if (baidu_ai_area.contains(aiDiv)) return; // 已移动过
 
-    // 4. 移动并折叠
-    aiDiv.querySelector("div.cos-fold-switch-context").dispatchEvent(new Event('click')); // 激活
+    // 5. 检查是否已经移动过
+    if (baidu_ai_area.contains(aiDiv)) {
+        // 如果 AI 模块已经在右侧栏的容器里了，就不重复移动
+        return;
+    }
+
+    // 6. 执行移动和折叠操作
+    // 首先点击原模块的折叠开关以确保其处于激活状态（以便正确获取内容，特别是对于 wenda_generate）
+    const activationSwitch = aiDiv.querySelector("div.cos-fold-switch-context");
+    if (activationSwitch) {
+        // 使用 dispatchEvent 触发点击事件
+        const clickEvent = new Event('click', { bubbles: true });
+        activationSwitch.dispatchEvent(clickEvent);
+    }
+
+    // 将 AI 模块移动到右侧栏的容器中
     baidu_ai_area.insertAdjacentElement('afterbegin', aiDiv);
+    // 设置样式以适应右侧栏宽度
     aiDiv.style.width = '100%';
     aiDiv.style.margin = '0';
-    
-    await foldAIModule(aiDiv);
+
+    // 7. 根据模块的 tpl 属性判断类型并应用相应的折叠逻辑
+    const tpl = aiDiv.getAttribute('tpl');
+    if (tpl === 'wenda_generate') {
+        foldWendaGenerate(aiDiv);
+    } else if (tpl === 'new_baikan_index') {
+        foldNewBaikanIndex(aiDiv);
+    }
 }
+
+/*
+function moveAIToRight2(right_col, left_col, params){
+    // 添加右侧栏 div
+    const innerhtml=`
+    <div class="baidu_ai">
+        <!-- 百度 AI 模块 -->
+        <!-- 填 -->
+        <hr/>
+    </div>
+    `;
+    right_col.insertAdjacentHTML('beforeend', innerhtml);
+}
+*/
 
 function extract_things(right_col, left_col, params){
     // 添加右侧栏 div

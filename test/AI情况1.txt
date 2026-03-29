@@ -1,0 +1,186 @@
+<div class="result-op c-container new-pmd" srcid="61344" id="1" tpl="new_baikan_index" mu="http://nourl.ubs.baidu.com/61344" data-op="{'y':'EF969FFA'}" data-click="{&quot;p1&quot;:1,&quot;rsv_bdr&quot;:&quot;0&quot;,&quot;fm&quot;:&quot;alop&quot;,&quot;rsv_stl&quot;:0,&quot;p5&quot;:1,&quot;area&quot;:&quot;LEFT&quot;}" data-cost="{&quot;renderCost&quot;:99,&quot;dataCost&quot;:8}" m-name="mirror-san/app/new_baikan_index/index_5cd24bb" m-path="https://pss.bdstatic.com/r/www/cache/static/mirror-san/app/new_baikan_index/index_5cd24bb" nr="1">
+            <div data-display-ext="{&quot;hasFold&quot;:1,&quot;coreCount&quot;:240,&quot;coreNum&quot;:35,&quot;subtitleNum&quot;:3,&quot;total_h&quot;:1346,&quot;screen_h&quot;:0}" data-show-overlength="1" card-show-log="{&quot;tplname&quot;:&quot;new_baikan_index&quot;,&quot;extra&quot;:{&quot;is_bk&quot;:1}}" data-click="{&quot;extra&quot;:&quot;{\&quot;is_bk\&quot;:1}&quot;}" class="
+            
+            
+        " style="--cardDarkBg:linear-gradient(176deg, rgba(77, 112, 255, 0.16) 0%, rgba(77, 112, 255, 0.1) 40%, rgba(129, 97, 255, 0.06) 60%, rgba(129, 97, 255, 0.00) 100%);;--markAnswerBg:rgba(41, 50, 225, .12);--markAnswerDarkBg:rgba(41,50,225,.12);;
+        "><div class="cosc-card 
+            dqa-layout_2cgIE
+            
+         
+                nbk-index_lwSre
+                
+                transparent-content-container_4GMNe
+                
+                content-with-fold-switch_5S0YM
+                pc-content-container_7IFC8
+            "><!--445--><!--445--><!--446--><div class="cosc-card-content-border"><!--447--><div class="cosc-card-content"><!--448--><!--449--><div data-module="header" class="tts-video-continue " rl-type="stop" data-show="component" data-show-ext="{&quot;component_content&quot;:{&quot;component_name&quot;:&quot;reference_enter&quot;,&quot;component_type&quot;:&quot;head_result&quot;}}"><div class="cosd-search-header cosd-search-header-primary">
+            <div class="cosd-search-header-brand-area">
+                <div class="cosd-search-header-brand-ai">
+                    <img src="https://gips0.baidu.com/it/u=2660100043,3986572706&amp;fm=3028&amp;app=3028&amp;f=PNG&amp;fmt=auto&amp;q=100&amp;size=f192_48" class="img-light cosd-search-header-brand-ai-image">
+                    <img src="https://gips3.baidu.com/it/u=2862834531,2772849958&amp;fm=3028&amp;app=3028&amp;f=PNG&amp;fmt=auto&amp;q=100&amp;size=f192_48" class="img-dark cosd-search-header-brand-ai-image">
+                </div>
+                <div class="cosd-search-header-citation">
+                    总结全网32篇结果
+                    <span>
+                        <i class="cos-icon cos-icon-down"></i><!--454-->
+                    </span>
+                </div><!--453-->
+                
+            <!--456--></div>
+            <div class="cosd-search-header-functional-area">
+                <!--457--><div class="tts-player_7C0TX cos-tts-unite" rl-type="stop" data-module="broadcast" disable-jump="true"><span class="tts-container_6mxgS
+                
+            "><div class="audio-pc_21eei"><i class="cos-icon cos-icon-volume-2 audio-pc-stop-icon_wlF0S"></i><!--462--><span class="audio-pc-stop-text_5EoWa">听</span></div><!--461--></span><!--460--><audio preload="auto"></audio></div><!--458-->
+            <!--457--></div>
+        </div><!--451--></div><!--450--><!--449--><div class="content-container_64QCb
+                
+                pc-content-container_6vknM
+                content-container-no-shadow_6By0H"><!--464--><div class="tts-placeholder-player_3jG1B"><!--465--></div><!--466--><div class="
+                    
+                    content-folded_2CtRW
+                " style="max-height: 250px;"><div data-module="head_module"><div class="
+                            
+                        "><div class="ai-entry"><!--469--><div><div disable-jump="false" class="cos-space-mt-xxs" data-show="summary" data-show-ext="{&quot;component_content&quot;:{&quot;component_name&quot;:&quot;markdown&quot;,&quot;component_type&quot;:&quot;abstract&quot;,&quot;reference_type&quot;:&quot;&quot;},&quot;entity_num&quot;:0,&quot;entity_content&quot;:&quot;&quot;,&quot;is_bk&quot;:1,&quot;hasCredibleRef&quot;:false}" sub-show="true" sub-show-log="{&quot;ext&quot;:{&quot;component_content&quot;:{&quot;component_name&quot;:&quot;markdown&quot;,&quot;component_type&quot;:&quot;abstract&quot;,&quot;reference_type&quot;:&quot;&quot;},&quot;entity_num&quot;:0,&quot;entity_content&quot;:&quot;&quot;,&quot;is_bk&quot;:1},&quot;area&quot;:&quot;summary&quot;}" data-click="{}"><!--471--><div class="link-wrapper_2Zcj9"><div class="cosd-markdown"><!--475--><div class="cosd-markdown-content "><!--477--><div class="marklang">
+                    <p class="marklang-paragraph"><mark class="flexible-marker flexible-marker-default">&zwnj;<strong><ml-text text="Python" _type="textDirective">Python</ml-text></strong>&zwnj;<mark class="flexible-marker flexible-marker-default">是一种由荷兰计算机科学家</mark>&zwnj;<strong><ml-text text="Python 创始人 吉多·范罗苏姆" _type="textDirective">吉多·范罗苏姆</ml-text></strong>&zwnj;<mark class="flexible-marker flexible-marker-default">于 1989 年创立的</mark>&zwnj;<strong>解释型、面向对象、动态类型</strong>&zwnj;</mark>的高级编程语言，官方网站（<a href="https://www.python.org/" rl-type="stop" class="marklang-link">www.python.org</a>）提供最新版本的下载与文档，截至 2026 年 3 月最新稳定版本为<mark class="flexible-marker flexible-marker-default">&zwnj;<strong>Python 3.14.3</strong>&zwnj;</mark>。&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--479--><span class="cos-tooltip cosd-citation"><!--482--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">1</span><!--483--></span><!--482--></span><!--480--><!--484--><!--484--><!--479--></span></span>&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--486--><span class="cos-tooltip cosd-citation"><!--489--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">2</span><!--490--></span><!--489--></span><!--487--><!--491--><!--491--><!--486--></span></span></p>
+                </div><!--477--></div><!--476--></div></div></div><!--470--></div><!--469--><!--468--></div></div><!--492--></div><div class="cos-divider cos-space-mt-lg"></div><!--493--><div class="meet-demand-expand_2EgAi" data-module="content"><!--495--><div><!--498--><!--499--><div rl-type="stop" data-module="content" class="accordion-panels_6Tmay cos-space-mt-lg"><div class="cos-accordion"><!--503--><!--505--><!--506--><div class="cos-accordion-panel 
+                        accordion-panels-link_15js6
+                        
+                        ">
+            <div class="cos-accordion-panel-header">
+                
+                <!--508--><!--509--><div class="accordion-panels-link-header_3iv03"><div><span class="accordion-panels-title_12473">语言特点与核心优势</span></div></div><!--510--><!--509-->
+                <div class="cos-accordion-panel-header-icon cos-accordion-panel-header-icon-rotate cos-accordion-panel-header-icon-animation">
+                    <i class="cos-icon cos-icon-down"></i>
+                </div>
+            </div>
+            <div class="cos-accordion-panel-content">
+                <!--513--><div class="
+                            accordion-panels-content_3WJL9
+                            
+                            
+                            
+                        "><div class="ai-entry" id="0"><!--516--><div><div disable-jump="false" data-show="block_summary" data-show-ext="{&quot;component_content&quot;:{&quot;component_name&quot;:&quot;markdown&quot;,&quot;component_type&quot;:&quot;abstract&quot;,&quot;reference_type&quot;:&quot;strengthen&quot;},&quot;entity_num&quot;:0,&quot;entity_content&quot;:&quot;&quot;,&quot;is_bk&quot;:1,&quot;hasCredibleRef&quot;:true}" sub-show="true" sub-show-log="{&quot;ext&quot;:{&quot;component_content&quot;:{&quot;component_name&quot;:&quot;markdown&quot;,&quot;component_type&quot;:&quot;abstract&quot;,&quot;reference_type&quot;:&quot;strengthen&quot;},&quot;entity_num&quot;:0,&quot;entity_content&quot;:&quot;&quot;,&quot;is_bk&quot;:1},&quot;area&quot;:&quot;block_summary&quot;}" data-click="{}"><!--518--><div class="link-wrapper_2Zcj9"><div class="cosd-markdown"><!--522--><div class="cosd-markdown-content "><!--524--><div class="marklang">
+                    <ol>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>简洁易读的语法</strong>&zwnj;</mark>：Python 代码风格清晰，强制缩进，阅读 Python 程序如同阅读英语，让开发者专注于解决问题而非语言本身。&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--526--><span class="cos-tooltip cosd-citation cosd-citation-tag"><!--529--><span class="cosd-citation-tag-citationId" style="--cosd-citation-tag-color: var(--cos-color-text-on-primary-light); --cosd-citation-tag-bg-color: var(--cos-color-bg-primary-light);"><span class="cosd-citation-tag-number">3</span><span><span class="cosd-citation-tag-text">百科</span></span><!--530--></span><!--529--></span><!--527--><!--531--><!--531--><!--526--></span></span>&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--533--><span class="cos-tooltip cosd-citation"><!--536--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">4</span><!--537--></span><!--536--></span><!--534--><!--538--><!--538--><!--533--></span></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>动态类型与解释执行</strong>&zwnj;</mark>：变量无需事先声明数据类型，解释器在赋值时自动推断；源代码可直接运行，无需编译成二进制代码。&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--540--><span class="cos-tooltip cosd-citation cosd-citation-tag"><!--543--><span class="cosd-citation-tag-citationId" style="--cosd-citation-tag-color: var(--cos-color-text-on-primary-light); --cosd-citation-tag-bg-color: var(--cos-color-bg-primary-light);"><span class="cosd-citation-tag-number">3</span><span><span class="cosd-citation-tag-text">百科</span></span><!--544--></span><!--543--></span><!--541--><!--545--><!--545--><!--540--></span></span>&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>免费开源与跨平台</strong>&zwnj;</mark>：Python 是 <ml-text text="FLOSS" _type="textDirective">FLOSS</ml-text>（自由/开放源码软件）之一，支持 Windows、macOS、Linux 等主流操作系统。&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--547--><span class="cos-tooltip cosd-citation cosd-citation-tag"><!--550--><span class="cosd-citation-tag-citationId" style="--cosd-citation-tag-color: var(--cos-color-text-on-primary-light); --cosd-citation-tag-bg-color: var(--cos-color-bg-primary-light);"><span class="cosd-citation-tag-number">3</span><span><span class="cosd-citation-tag-text">百科</span></span><!--551--></span><!--550--></span><!--548--><!--552--><!--552--><!--547--></span></span>&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--554--><span class="cos-tooltip cosd-citation"><!--557--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">4</span><!--558--></span><!--557--></span><!--555--><!--559--><!--559--><!--554--></span></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>丰富的生态系统</strong>&zwnj;</mark>：拥有庞大的标准库和第三方库，涵盖数据处理、网络通信、图形界面等多个领域。&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--561--><span class="cos-tooltip cosd-citation cosd-citation-tag"><!--564--><span class="cosd-citation-tag-citationId" style="--cosd-citation-tag-color: var(--cos-color-text-on-primary-light); --cosd-citation-tag-bg-color: var(--cos-color-bg-primary-light);"><span class="cosd-citation-tag-number">3</span><span><span class="cosd-citation-tag-text">百科</span></span><!--565--></span><!--564--></span><!--562--><!--566--><!--566--><!--561--></span></span>&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--568--><span class="cos-tooltip cosd-citation"><!--571--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">5</span><!--572--></span><!--571--></span><!--569--><!--573--><!--573--><!--568--></span></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>可扩展与可嵌入</strong>&zwnj;</mark>：可使用 C、C++ 等语言扩展新功能，也可嵌入到其他程序中作为脚本语言使用。&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--575--><span class="cos-tooltip cosd-citation"><!--578--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">2</span><!--579--></span><!--578--></span><!--576--><!--580--><!--580--><!--575--></span></span>&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--582--><span class="cos-tooltip cosd-citation"><!--585--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">5</span><!--586--></span><!--585--></span><!--583--><!--587--><!--587--><!--582--></span></span></li>
+</ol>
+                </div><!--524--></div><!--523--></div></div></div><!--517--></div><!--516--><!--515--></div></div>
+            <!--513--></div>
+            <div class="cos-divider"></div>
+        </div><!--505--><!--588--><div class="cos-divider cos-space-mt-lg"></div><!--589--><div class="cos-accordion-panel 
+                        accordion-panels-link_15js6
+                        
+                        cos-space-mt-lg">
+            <div class="cos-accordion-panel-header">
+                
+                <!--591--><!--592--><div class="accordion-panels-link-header_3iv03"><div><span class="accordion-panels-title_12473">应用领域与发展历程</span></div></div><!--593--><!--592-->
+                <div class="cos-accordion-panel-header-icon cos-accordion-panel-header-icon-rotate cos-accordion-panel-header-icon-animation">
+                    <i class="cos-icon cos-icon-down"></i>
+                </div>
+            </div>
+            <div class="cos-accordion-panel-content">
+                <!--596--><div class="
+                            accordion-panels-content_3WJL9
+                            
+                            
+                            
+                        "><div class="ai-entry" id="1"><!--599--><div><div disable-jump="false" data-show="block_summary" data-show-ext="{&quot;component_content&quot;:{&quot;component_name&quot;:&quot;markdown&quot;,&quot;component_type&quot;:&quot;abstract&quot;,&quot;reference_type&quot;:&quot;strengthen&quot;},&quot;entity_num&quot;:0,&quot;entity_content&quot;:&quot;&quot;,&quot;is_bk&quot;:1,&quot;hasCredibleRef&quot;:true}" sub-show="true" sub-show-log="{&quot;ext&quot;:{&quot;component_content&quot;:{&quot;component_name&quot;:&quot;markdown&quot;,&quot;component_type&quot;:&quot;abstract&quot;,&quot;reference_type&quot;:&quot;strengthen&quot;},&quot;entity_num&quot;:0,&quot;entity_content&quot;:&quot;&quot;,&quot;is_bk&quot;:1},&quot;area&quot;:&quot;block_summary&quot;}" data-click="{}"><!--601--><div class="link-wrapper_2Zcj9"><div class="cosd-markdown"><!--605--><div class="cosd-markdown-content "><!--607--><div class="marklang">
+                    <ol>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>主要应用方向</strong>&zwnj;</mark>：
+<ul>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>Web 开发</strong>&zwnj;</mark>：Django、<ml-text text="Flask" _type="textDirective">Flask</ml-text> 等框架支持快速搭建网站和后端服务。&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--609--><span class="cos-tooltip cosd-citation cosd-citation-tag"><!--612--><span class="cosd-citation-tag-citationId" style="--cosd-citation-tag-color: var(--cos-color-text-on-primary-light); --cosd-citation-tag-bg-color: var(--cos-color-bg-primary-light);"><span class="cosd-citation-tag-number">3</span><span><span class="cosd-citation-tag-text">百科</span></span><!--613--></span><!--612--></span><!--610--><!--614--><!--614--><!--609--></span></span>&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--616--><span class="cos-tooltip cosd-citation"><!--619--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">5</span><!--620--></span><!--619--></span><!--617--><!--621--><!--621--><!--616--></span></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>数据分析与科学计算</strong>&zwnj;</mark>：NumPy、<ml-text text="Pandas" _type="textDirective">Pandas</ml-text>、<ml-text text="SciPy" _type="textDirective">SciPy</ml-text>、<ml-text text="Matplotlib" _type="textDirective">Matplotlib</ml-text> 等库提供强大的数据处理和可视化能力。&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--623--><span class="cos-tooltip cosd-citation cosd-citation-tag"><!--626--><span class="cosd-citation-tag-citationId" style="--cosd-citation-tag-color: var(--cos-color-text-on-primary-light); --cosd-citation-tag-bg-color: var(--cos-color-bg-primary-light);"><span class="cosd-citation-tag-number">3</span><span><span class="cosd-citation-tag-text">百科</span></span><!--627--></span><!--626--></span><!--624--><!--628--><!--628--><!--623--></span></span>&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>人工智能与机器学习</strong>&zwnj;</mark>：PyTorch、<ml-text text="TensorFlow" _type="textDirective">TensorFlow</ml-text> 等深度学习框架均以 Python 为主要接口语言。&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--630--><span class="cos-tooltip cosd-citation"><!--633--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">4</span><!--634--></span><!--633--></span><!--631--><!--635--><!--635--><!--630--></span></span>&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--637--><span class="cos-tooltip cosd-citation"><!--640--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">5</span><!--641--></span><!--640--></span><!--638--><!--642--><!--642--><!--637--></span></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>自动化脚本与运维</strong>&zwnj;</mark>：适用于系统管理、文件处理、定时任务等自动化场景。&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--644--><span class="cos-tooltip cosd-citation cosd-citation-tag"><!--647--><span class="cosd-citation-tag-citationId" style="--cosd-citation-tag-color: var(--cos-color-text-on-primary-light); --cosd-citation-tag-bg-color: var(--cos-color-bg-primary-light);"><span class="cosd-citation-tag-number">3</span><span><span class="cosd-citation-tag-text">百科</span></span><!--648--></span><!--647--></span><!--645--><!--649--><!--649--><!--644--></span></span>&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--651--><span class="cos-tooltip cosd-citation"><!--654--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">5</span><!--655--></span><!--654--></span><!--652--><!--656--><!--656--><!--651--></span></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>网络爬虫</strong>&zwnj;</mark>：Scrapy 等框架使 Python 成为爬虫开发的首选语言。&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--658--><span class="cos-tooltip cosd-citation"><!--661--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">5</span><!--662--></span><!--661--></span><!--659--><!--663--><!--663--><!--658--></span></span></li>
+</ul>
+</li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>发展历程</strong>&zwnj;</mark>：
+<ul>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>1989 年</strong>&zwnj;</mark>：吉多·范罗苏姆在<ml-text text="荷兰国家数学与计算机科学研究中心" _type="textDirective">荷兰国家数学与计算机科学研究中心</ml-text>（CWI）开始开发 Python。&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--665--><span class="cos-tooltip cosd-citation"><!--668--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">2</span><!--669--></span><!--668--></span><!--666--><!--670--><!--670--><!--665--></span></span>&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>1991 年</strong>&zwnj;</mark>：发布首个公开版本。&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--672--><span class="cos-tooltip cosd-citation"><!--675--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">4</span><!--676--></span><!--675--></span><!--673--><!--677--><!--677--><!--672--></span></span>&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>2005-2013 年</strong>&zwnj;</mark>：创始人任职于 <ml-text text="Google" _type="textDirective">Google</ml-text>，推动 Python 发展。&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>2020 年至今</strong>&zwnj;</mark>：吉多·范罗苏姆加入<ml-text text="微软" _type="textDirective">微软</ml-text>，持续维护 Python 生态。&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"></span></li>
+</ul>
+</li>
+</ol>
+                </div><!--607--></div><!--606--></div></div></div><!--600--></div><!--599--><!--598--></div></div>
+            <!--596--></div>
+            <div class="cos-divider"></div>
+        </div><!--588--><!--678--><div class="cos-divider cos-space-mt-lg"></div><!--679--><div class="cos-accordion-panel 
+                        accordion-panels-link_15js6
+                        
+                        cos-space-mt-lg">
+            <div class="cos-accordion-panel-header">
+                
+                <!--681--><!--682--><div class="accordion-panels-link-header_3iv03"><div><span class="accordion-panels-title_12473">学习资源与版本信息</span></div></div><!--683--><!--682-->
+                <div class="cos-accordion-panel-header-icon cos-accordion-panel-header-icon-rotate cos-accordion-panel-header-icon-animation">
+                    <i class="cos-icon cos-icon-down"></i>
+                </div>
+            </div>
+            <div class="cos-accordion-panel-content">
+                <!--686--><div class="
+                            accordion-panels-content_3WJL9
+                            cos-space-pb-none
+                            
+                            
+                        "><div class="ai-entry" id="2"><!--689--><div><div disable-jump="false" data-show="block_summary" data-show-ext="{&quot;component_content&quot;:{&quot;component_name&quot;:&quot;markdown&quot;,&quot;component_type&quot;:&quot;abstract&quot;,&quot;reference_type&quot;:&quot;&quot;},&quot;entity_num&quot;:0,&quot;entity_content&quot;:&quot;&quot;,&quot;is_bk&quot;:1,&quot;hasCredibleRef&quot;:false}" sub-show="true" sub-show-log="{&quot;ext&quot;:{&quot;component_content&quot;:{&quot;component_name&quot;:&quot;markdown&quot;,&quot;component_type&quot;:&quot;abstract&quot;,&quot;reference_type&quot;:&quot;&quot;},&quot;entity_num&quot;:0,&quot;entity_content&quot;:&quot;&quot;,&quot;is_bk&quot;:1},&quot;area&quot;:&quot;block_summary&quot;}" data-click="{}"><!--691--><div class="link-wrapper_2Zcj9"><div class="cosd-markdown"><!--695--><div class="cosd-markdown-content "><!--697--><div class="marklang">
+                    <ol>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>官方发音指南</strong>&zwnj;<mark class="flexible-marker flexible-marker-default">：Python 标准英文发音为</mark>&zwnj;<strong>/ˈpaɪθən/</strong>&zwnj;<mark class="flexible-marker flexible-marker-default">，中文社区常音译为"</mark>&zwnj;<strong>派森</strong>&zwnj;</mark>"，注意"th"发/θ/音（咬住舌头吐气）。&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"></span>&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--699--><span class="cos-tooltip cosd-citation"><!--702--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">8</span><!--703--></span><!--702--></span><!--700--><!--704--><!--704--><!--699--></span></span>&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--706--><span class="cos-tooltip cosd-citation"><!--709--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">9</span><!--710--></span><!--709--></span><!--707--><!--711--><!--711--><!--706--></span></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>当前版本状态</strong>&zwnj;</mark>：
+<ul>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>Python 3.14.3</strong>&zwnj;</mark>：2026 年 2 月 3 日发布，为最新稳定版本。&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--713--><span class="cos-tooltip cosd-citation"><!--716--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">1</span><!--717--></span><!--716--></span><!--714--><!--718--><!--718--><!--713--></span></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>Python 3.15</strong>&zwnj;</mark>：预发布版本计划于 2026 年 10 月 1 日发布。&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--720--><span class="cos-tooltip cosd-citation"><!--723--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">1</span><!--724--></span><!--723--></span><!--721--><!--725--><!--725--><!--720--></span></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>停止维护版本</strong>&zwnj;</mark>：Python 3.9 及更早版本已结束生命周期。&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--727--><span class="cos-tooltip cosd-citation"><!--730--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">1</span><!--731--></span><!--730--></span><!--728--><!--732--><!--732--><!--727--></span></span></li>
+</ul>
+</li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>学习资源推荐</strong>&zwnj;</mark>：
+<ul>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>官方文档</strong>&zwnj;</mark>：Python 官网提供初学者指南、完整文档及教程。&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--734--><span class="cos-tooltip cosd-citation"><!--737--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">2</span><!--738--></span><!--737--></span><!--735--><!--739--><!--739--><!--734--></span></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>中文百科</strong>&zwnj;</mark>：百度百科提供 Python 的详细介绍、语法示例和应用领域概览。&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--741--><span class="cos-tooltip cosd-citation"><!--744--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">2</span><!--745--></span><!--744--></span><!--742--><!--746--><!--746--><!--741--></span></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>在线课程</strong>&zwnj;</mark>：中国大学 MOOC 平台有<ml-text text="北京理工大学" _type="textDirective">北京理工大学</ml-text><ml-text text="嵩天 老师" _type="textDirective">嵩天</ml-text>老师的 Python 课程。&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--748--><span class="cos-tooltip cosd-citation"><!--751--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">2</span><!--752--></span><!--751--></span><!--749--><!--753--><!--753--><!--748--></span></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>技术社区</strong>&zwnj;</mark>：CSDN、B 站等平台有大量从基础到进阶的免费教程。&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--755--><span class="cos-tooltip cosd-citation"><!--758--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">2</span><!--759--></span><!--758--></span><!--756--><!--760--><!--760--><!--755--></span></span></li>
+</ul>
+</li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>安装建议</strong>&zwnj;</mark>：
+<ul>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>初学者</strong>&zwnj;</mark>：推荐从官网下载安装包，按照向导完成安装。&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--762--><span class="cos-tooltip cosd-citation"><!--765--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">2</span><!--766--></span><!--765--></span><!--763--><!--767--><!--767--><!--762--></span></span></li>
+<li><mark class="flexible-marker flexible-marker-default">&zwnj;<strong>高级用户</strong>&zwnj;</mark>：可使用虚拟环境管理工具（如 <ml-text text="venv" _type="textDirective">venv</ml-text>）隔离项目依赖。&zwnj;&zwnj;<span disable-audio="true" disable-copy="true" disable-jump="true"><span rl-type="stop"><!--769--><span class="cos-tooltip cosd-citation"><!--772--><span class="cosd-citation-citationId"><span class="cosd-citation-tag-number">2</span><!--773--></span><!--772--></span><!--770--><!--774--><!--774--><!--769--></span></span></li>
+</ul>
+</li>
+</ol>
+                </div><!--697--></div><!--696--></div></div></div><!--690--></div><!--689--><!--688--></div></div>
+            <!--686--></div>
+            <div class="cos-divider"></div>
+        </div><!--678--><!--504--><!--503--></div></div><!--500--><!--498--><!--497--></div><!--496--><!--495--><!--494--><!--775--><!--776--></div></div><div><div data-module="more" data-show="more" disable-audio="true"><div class="
+            cosd-fold-switch_4ktgn
+            cosd-fold-switch-fold_3Fjjl" rl-type="stop">
+        <div class="cosd-fold-switch-mask_7l3O3"></div><!--779-->
+        <div>
+            
+            <!--780--><!--780--><div class="cos-fold-switch cosd-fold-switch-content_3PpNT">
+            
+            <!--783--><div class="cos-fold-switch-context">
+                
+                <span class="cos-fold-switch-text">
+                    展开剩余81%内容
+                </span><!--784-->
+                <i class="cos-icon cos-icon-down cos-fold-switch-icon"></i>
+            </div>
+        </div><!--781-->
+            
+        <!--786--><!--786--></div>
+    </div></div><!--777--><!--787--></div><div rl-type="stop" data-show="interaction" data-show-ext="{&quot;is_bk&quot;:1}" sub-show="true" sub-show-log="{&quot;ext&quot;:{&quot;is_bk&quot;:1},&quot;area&quot;:&quot;interaction&quot;}" data-click="{}"><div class="interact-container_440HL interact_2SGiA 
+                        nbk-interact_UGQRs
+                        has-fold-button_7811s"><div class="left_3HRKh"><!--791--><!--792--><div class="interact-left_10dDI"><div disable-jump="true" class="copy_4oOrz copy_3BXbe item_4zuKb"><span class="cos-tooltip"><!--796--><div><i class="cos-icon cos-icon-copy"></i></div><!--796--></span></div><!--793--><!--798--><div disable-jump="true" class="download_3UXof item_4zuKb">
+        <span class="cos-tooltip"><!--802-->
+            <div class="download_1mQyh">
+                <i class="cos-icon cos-icon-download"></i>
+            </div>
+            
+        <!--802--></span>
+    </div><!--799--><div class="share-container_2sY3t share_4Iquz item_4zuKb"><div rl-type="stop" disable-jump="true" data-nolog="true" class="share_1vMwP cos-link"><span class="cos-tooltip"><!--807--><div><i class="cos-icon cos-icon-share1"></i></div><!--807--></span></div><div class="share-content-long-img_1kfCV"><div class="horizontal-gradient_3GzYB"></div><div class="share-content_2zZ2H"><div class="header_3nhNt"><!--810--><!--811--><!--812--><div class="title_4VmJB">python</div></div><div class="cos-divider"></div><div class="content_2mJwl"></div><div class="footer_4DlsA"><div class="footer-left_7eIvm"><img class="footer-logo_4XMoV" src=""><div class="footer-text-container_4tFSo"><div class="footer-text-one_5lpHD">长按识别，即刻体验百度AI</div><div class="footer-text-two_30NBD">以上内容均由AI生成</div></div></div><div class="qr-container_3zipB"><!--813--></div></div></div></div></div><!--804--><div disable-jump="true" class="feedback_2REFq feedback_1VU4i item_4zuKb"><span class="cos-tooltip"><!--817--><div><i class="cos-icon cos-icon-thumbs-down"></i></div><!--817--></span></div><!--814--><!--819--><div class="cos-divider-vertical divider-vertical_3Pu8I" style="height: 16px"></div><div disable-jump="true" class="deep-search_6Huzl deep-search_lUfLI item_4zuKb"><i class="cos-icon cos-icon-deep-search deep-search-icon_2UWr9"></i><span>深度思考</span></div><!--820--></div><!--792--><!--791--></div><div><!--823--><!--823--></div><div><!--824--><!--824--></div></div></div><!--788--><!--464--></div><!--825--><!--825--><!--448--></div></div><!--826--><!--826--></div></div>
+        </div>
