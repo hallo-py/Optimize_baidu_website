@@ -194,20 +194,6 @@ async function moveAIToRight(right_col, left_col, params) {
     }
 }
 
-/*
-function moveAIToRight2(right_col, left_col, params){
-    // 添加右侧栏 div
-    const innerhtml=`
-    <div class="baidu_ai">
-        <!-- 百度 AI 模块 -->
-        <!-- 填 -->
-        <hr/>
-    </div>
-    `;
-    right_col.insertAdjacentHTML('beforeend', innerhtml);
-}
-*/
-
 function extract_things(right_col, left_col, params){
     // 添加右侧栏 div
     const innerhtml=`

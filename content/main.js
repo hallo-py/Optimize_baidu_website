@@ -95,7 +95,20 @@ function core_function() {
             window.location.href = item.href;
         });
     });
-
+    
+    // 检测搜索关键词更新
+    document.querySelector("textarea").addEventListener('keydown', function(event) {
+    // 检测是否按下 Enter 键，且没有按住 Shift
+        if (event.key === 'Enter' && !event.shiftKey) {
+            // EQ: https://www.baidu.com/s?wd=python#
+            window.location.href = `https://www.baidu.com/s?wd=${document.querySelector("textarea").value}#`;
+            // 或者执行你的加载/提交逻辑
+        }
+    });
+    document.querySelector("button#chat-submit-button").addEventListener('click', function(event) {
+        window.location.href = `https://www.baidu.com/s?wd=${document.querySelector("textarea").value}#`;
+    });
+    
 // ================== 初始化 结束 ==================
 
 }
