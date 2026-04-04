@@ -17,13 +17,13 @@ function save() {
         chrome.storage.sync.set({
                 [name] : isOn 
             }, () => {
-                // console.log(`保存 ${name}: ${isOn}`);
-                chrome.storage.sync.get(["show_log"], (result) => {
-                    if (result.show_log) {
-                        document.querySelector("div.log")
-                            .insertAdjacentHTML("afterEnd",`<p>save: ${name}:${isOn}</p>`);
-                    }
-                });
+                console.log(`保存 ${name}: ${isOn}`);
+                // chrome.storage.sync.get(["show_log"], (result) => {
+                //     if (result.show_log) {
+                //         document.querySelector("div.log")
+                //             .insertAdjacentHTML("afterEnd",`<p>save: ${name}:${isOn}</p>`);
+                //     }
+                // });
             }
         );
     });
@@ -46,14 +46,17 @@ document.addEventListener('DOMContentLoaded', function() {
 function clear() {
     chrome.storage.sync.clear(() => {
         // console.log(`清空所有数据`);
-        chrome.storage.sync.get(["show_log"], (result) => {
-            if (result.show_log) {
-                document.querySelector("div.log")
-                    .insertAdjacentHTML("afterEnd",`<p>clear: 所有数据已清空</p>`);
-            }
-        });
+        // chrome.storage.sync.get(["show_log"], (result) => {
+        // if (result.show_log) {
+            document.querySelector("div.log")
+                .insertAdjacentHTML("afterEnd",`<p>clear: 所有数据已清空</p>`);
+        // }
+        // });
     });
     chrome.storage.sync.set(default_var).then(() => {
+        chrome.runtime.sendMessage({
+            title: "clear"
+        });
         window.location.reload();
     });
 }

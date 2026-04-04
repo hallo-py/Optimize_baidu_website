@@ -72,6 +72,7 @@ chrome.storage.onChanged.addListener((changes, area) => {
  * ...
  */
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    // 改变插件开关（状态）
     if (message.title === "changeStatus") {
         chrome.storage.sync.get(["now_icon"], (result) => {
             console.log("changeStatus:",message.message);
@@ -82,6 +83,13 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
                     "now_icon": message.message
                 });
             }
+        });
+    }
+
+    // 测试清空
+    if (message.title === "clear") {
+        chrome.storage.sync.get("right_list", (result) => {
+            console.log("right_list:",result.right_list);
         });
     }
 });

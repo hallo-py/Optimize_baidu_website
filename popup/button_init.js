@@ -29,7 +29,7 @@ var initToggleButtons=function() {
             //调试输出
             // chrome.storage.sync.get(["show_log"], (result) => {
             //     if (result.show_log) {
-                    document.querySelector("div.log").insertAdjacentHTML("beforeEnd", `<p>load: ${name}:${savedValue}</p>`);
+            //        document.querySelector("div.log").insertAdjacentHTML("beforeEnd", `<p>load: ${name}:${savedValue}</p>`);
             //     } else {
             //         document.querySelector("div.log")?.remove();
             //     }

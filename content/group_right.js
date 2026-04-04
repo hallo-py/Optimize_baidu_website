@@ -137,8 +137,9 @@ async function moveAIToRight(right_col, left_col, params) {
 
     // ========== 主逻辑 ==========
     // 1. 读取用户设置
-    const result = await chrome.storage.sync.get(['show_baidu_ai']);
-    const showAI = result.show_baidu_ai !== false; // 默认 true
+    // const result = await chrome.storage.sync.get(['show_baidu_ai']);
+    // const showAI = result.show_baidu_ai !== false; // 默认 true
+    const showAI = true;
 
     // 2. 查找页面上的 AI 模块和右侧栏的容器
     const aiDiv = document.querySelector('div[tpl="wenda_generate"], div[tpl="new_baikan_index"]');
@@ -262,6 +263,7 @@ function core_ai(right_col, left_col, params){
             <input type="text" placeholder="输入问题或生成图片"> <!-- 填 '__' -->
             <button href="javascript:void(0);">发送</button>
         </div>
+        <hr/>
     </div>
     `;
     right_col.insertAdjacentHTML('beforeend', innerhtml);
