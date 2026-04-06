@@ -1,3 +1,5 @@
+
+
 const params = new URLSearchParams(window.location.search);
 
 // https://www.baidu.com/s?wd=python&pn=10&ie=utf-8
@@ -17,5 +19,9 @@ if (params.has('pn') && params.get('pn') !== '0') {
 
 let newURL = `https://www.baidu.com/s?${newParams.toString()}#`;
 if (window.location.href !== newURL) {
-    window.location.href = newURL;
+    chrome.storage.sync.get(['on_off_opt'], (result) => {
+        if (result.on_off_opt) {
+            window.location.href = newURL;
+        }
+    });
 }

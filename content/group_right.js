@@ -251,9 +251,9 @@ async function extract_things(right_col, left_col, params){
     // 删除
     await chrome.storage.sync.get(['donot_show_extract_on_2nd_pg'], async (result) => {
         const is_not_show = result.donot_show_extract_on_2nd_pg;
-        
+        const pn = Number(params.get("pn")??'0');
         if (is_not_show){
-            if ((params.get("pn")??'0') !== '0' || (params.get("pn")??'00') !== '00'){
+            if (pn !== 0){
                 // 不在第一页
                 document.querySelector('.extract').remove();
             }
