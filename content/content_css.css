@@ -6,12 +6,11 @@
     border-style: solid;
     border-color: rgb(138, 175, 255);
     border-image: initial;
-<<<<<<< HEAD
     border-radius: 50px !important;
 }
 
 #content_left > div {
-    width: 90%;
+    width: 100%;
     left: 5px;
 }
 
@@ -55,11 +54,5 @@
     box-shadow: none !important;
     background-color: none !important;
     border-radius: none !important;
-=======
     border-radius: 50px;
-}
-
-#content_left > div {
-    width: 100%;
->>>>>>> f260a78e2945fec41516fa2e4c5b2a6565ac368b
 }
