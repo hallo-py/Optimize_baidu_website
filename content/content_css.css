@@ -35,11 +35,18 @@
 }
 
 /*百度选项卡原边框去除(original_website_result)*/
-.left-inside > ._content-border_{
+.left-inside > ._content-border_1q9is_4{
     width: 90% !important;
     background-color: none !important;
     border: none !important;
     box-shadow: none !important;
+    padding: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.left-inside > ._aladdin_{
+    border: none !important;
 }
 
 /*百度选项卡原边框去除(Baidu_AI_provide)*/
@@ -53,8 +60,9 @@
 /*底侧切换栏被选项*/
 .page-inner_2jZi2 > strong{
     width: 40px !important;
-    border: 2px solid rgb(255, 255, 255) !important;
+    border: 2px solid #6e8bff !important;
     border-radius: 40px !important;
+    box-shadow: 2px solid #7692ff !important;
 }
 
 strong > .page-item_M4MDr-pc{
@@ -66,13 +74,31 @@ strong > .page-item_M4MDr-pc{
 
 /*底侧切换栏未选项*/
 .page-inner_2jZi2 > a{
-    border: 2px solid rgb(255, 255, 255) !important;
+    border: 2px solid rgba(255, 255, 255, 0.552) !important;
+    transition-duration: 0.4s !important;
     border-radius: 40px !important;
 }
 
 a > .page-item_M4MDr-pc{
     text-align: center !important;
-    border: 2px solid rgb(255, 255, 255) !important;
+    border: 2px solid rgb(255, 255, 255,0.552) !important;
+    transition-duration: 0.4s !important;
+    border-radius: 40px !important;
+}
+
+.page-inner_2jZi2 > a:hover{
+    width: 41.689px !important;
+    height: 37.999px !important;
+    border: 2px solid #6e8bff !important;
+    border-radius: 40px !important;
+}
+
+a > .page-item_M4MDr-pc:hover{
+    text-align: center !important;
+    border: 2px solid #6e8bff !important;
+    background-color: #6e8bff !important;
+    width: 41.689px !important;
+    height: 37.999px !important;
     border-radius: 40px !important;
 }
 
@@ -86,4 +112,6 @@ a > .page-item_M4MDr-pc{
     padding-top: 7px !important;
     padding-right: 9px !important;
     padding-left: 8px !important;
+    margin-left: 140px !important;
 }
+
